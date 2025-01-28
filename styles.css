@@ -61,7 +61,7 @@ nav{
 
 main {
   height: 500px; 
-  background-image: url(/img/Doctor.jpg); /* Ensure correct path to your image */
+  background-image: url(img/doctor.png); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position:center ;
