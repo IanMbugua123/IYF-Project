@@ -666,7 +666,8 @@
 
 .index-Constultation {
   width: 100%;
-  padding: 60px 0;
+  padding: 30px 70px;
+  margin-top: 300px;
   display: flex;
   justify-content: center;
   column-gap: 20px;
