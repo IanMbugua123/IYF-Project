@@ -653,10 +653,12 @@
 .info-section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #007bff;
   color: white;
   padding: 20px;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
 .info-section div {
   text-align: center;
@@ -665,19 +667,15 @@
 /* Constultation Section*/
 
 .index-Constultation {
-  width: 100%;
-  padding: 30px 70px;
-  margin-top: 300px;
   display: flex;
   justify-content: center;
   column-gap: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .index-Constultation p{
   color: #111;
-  padding: 20px;
-  padding-bottom: 40px;
   flex-basis: 100%;
   text-transform: uppercase;
   font-size: 22px;
@@ -696,19 +694,19 @@
 }
 
 .index-Constultation-box:nth-child(2){
-  background-image: url(/img/Emergency.jpg);
+  background-image: url(img/emergency.png);
 }
 
 .index-Constultation-box:nth-child(3){
-  background-image: url(/img/Neuro.jpg);
+  background-image: url(img/neuro.png);
 }
 
 .index-Constultation-box:nth-child(4){
-  background-image: url(/img/Paramedics.jpg);
+  background-image: url(img/paramedics.png);
 }
 
 .index-Constultation-box:nth-child(5){
-  background-image: url(/img/Scope.jpg);
+  background-image: url(img/scope.png);
 }
 
 
@@ -1141,13 +1139,15 @@
   .info-section {
     flex-direction: column;
     text-align: center;
-    padding: 10px;
+    gap: 15px;
+    
   }
 
   .index-Constultation {
     flex-direction: column;
-    gap: 10px;
-  }
+    gap: 20px;
+    
+ }
 
   .index-Constultation-box {
     width: 100%;
