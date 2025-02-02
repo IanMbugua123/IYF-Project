@@ -667,7 +667,7 @@
   color: white;
   padding: 20px 40px;
   border-radius: 8px;
-  width: 50%;
+  width: 100%;
 }
 
 /* Individual Info Box */
@@ -996,6 +996,7 @@
 .newsletter-container {
   background-color: #0056e0;
   padding: 30px;
+  margin-top: 30px;
   border-radius: 10px;
   text-align: center;
   color: #fff;
