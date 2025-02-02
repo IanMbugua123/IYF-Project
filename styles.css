@@ -1,189 +1,5 @@
-<<<<<<< HEAD
 body{
-  background: linear-gradient(lightblue,white);
-  background-repeat: no-repeat;
-  
-}
-
-nav{
-  height: auto;
-  width: a;
-  display: flex;
-  justify-content: space-around;
-}
-
-.Heading{
-  color: cornflowerblue;
-}
-
-.Options {
-  display: flex; 
-  justify-content: space-around; 
-  align-items: center; 
-  padding: 10px; 
-}
-
-.Options a {
-  text-decoration: none;
-  color: cornflowerblue; 
-  padding: 10px 20px;
-  transition: color 0.3s ease, background-color 0.3s ease; 
-  border-radius: 40px;
-}
-
-.Options a:hover {
-  color: #fff; 
-  background-color: #007bff; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.logins {
-  display: flex; 
-  gap: 15px; 
-  justify-content: center; 
-  padding: 10px;
-}
-
-.logins a {
-  text-decoration: none; 
-  color:cornflowerblue; 
-  padding: 10px 20px; 
-  border: 2px solid cornflowerblue; 
-  border-radius: 40px; 
-  transition: all 0.3s ease; 
-}
-
-.logins a:hover {
-  color: #007bff; 
-  border-color: #007bff;
-  background-color: rgba(0, 123, 255, 0.1); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-main {
-  height: 500px; 
-  background-image: url(img/doctor.png); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position:center ;
-}
-
-.m-intro {
-    position: relative; 
-  max-width: 400px; 
-  z-index: 1; 
-  text-align: center; 
-  color: white; 
-  margin-bottom: 30px; 
-}
-
-main::before {
-  content: ""; 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent; 
-  z-index: -1; 
-}
-
-
-.m-intro h1 {
-  font-size: px; 
-  color: cornflowerblue; 
-  margin-bottom: 10px; 
-}
-
-.m-intro p {
-  font-size: 16px; 
-  color:cornflowerblue; 
-  line-height: 1.5;
-}
-
-/* Base styles - applicable to all screen sizes */
-
-/* Small devices (phones, 0px - 576px) */
-@media only screen and (max-width: 576px) {
-  nav {
-    flex-direction: column;
-  }
-  .Options a {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
-  .logins a {
-    font-size: 14px;
-    padding: 8px 15px;
-  }
-  main {
-    height: 300px;
-    background-size: cover;
-  }
-  .m-intro {
-    max-width: 300px;
-    font-size: 14px;
-  }
-}
-
-/* Medium devices (tablets, 577px - 768px) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  nav {
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-  .Options a {
-    padding: 10px 18px;
-  }
-  .logins a {
-    padding: 10px 18px;
-  }
-  main {
-    height: 400px;
-  }
-  .m-intro {
-    max-width: 350px;
-  }
-}
-
-/* Large devices (desktops, 769px - 992px) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  nav {
-    justify-content: space-around;
-    padding: 15px 30px;
-  }
-  .Options a {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
-  main {
-    height: 450px;
-  }
-  .m-intro {
-    max-width: 400px;
-  }
-}
-
-/* Extra large devices (large desktops, 993px and up) */
-@media only screen and (min-width: 993px) {
-  nav {
-    justify-content: space-around;
-  }
-  .Options a {
-    font-size: 18px;
-  }
-  main {
-    height: 500px;
-  }
-  .m-intro {
-    max-width: 450px;
-  }
-}
-
-
-=======
-body{
-  background: linear-gradient(#662D8C,#ED1E79 );
+  background: linear-gradient( #662D8C,#ED1E79 );
   background-repeat: no-repeat;
   
 }
@@ -288,84 +104,117 @@ main::before {
 }
 
 
-/* Base styles - applicable to all screen sizes */
+/*  Medium Screens (Tablets, 768px - 1024px) */
+@media screen and (max-width: 1024px) {
 
-/* Small devices (phones, 0px - 576px) */
-@media only screen and (max-width: 576px) {
+  /* Adjust navigation for smaller screens */
   nav {
     flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
-  .Options a {
-    padding: 8px 15px;
-    font-size: 14px;
+
+  .Options {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
   }
-  .logins a {
-    font-size: 14px;
-    padding: 8px 15px;
+
+  .logins {
+    flex-direction: column;
+    gap: 10px;
   }
+
   main {
-    height: 300px;
-    background-size: cover;
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
-  .m-intro {
+
+  main img {
+    width: 80%;
     max-width: 300px;
-    font-size: 14px;
+  }
+
+  .m-intro {
+    max-width: 80%;
+    margin: auto;
   }
 }
 
-/* Medium devices (tablets, 577px - 768px) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+/* Small Screens (Mobile, 480px - 767px) */
+@media screen and (max-width: 767px) {
+
+  /* Stack nav items vertically */
   nav {
-    justify-content: space-between;
-    padding: 10px 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  .Options a {
-    padding: 10px 18px;
+
+  .Options,
+  .logins {
+    flex-direction: column;
+    width: 100%;
   }
+
+  .Options a,
   .logins a {
-    padding: 10px 18px;
+    width: 100%;
+    text-align: center;
   }
+
+  /* Adjust main section */
   main {
-    height: 400px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
   }
+
+  main img {
+    width: 90%;
+  }
+
   .m-intro {
-    max-width: 350px;
+    max-width: 90%;
+  }
+
+  .m-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .m-intro p {
+    font-size: 1rem;
   }
 }
 
-/* Large devices (desktops, 769px - 992px) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  nav {
-    justify-content: space-around;
-    padding: 15px 30px;
+/*  Extra Small Screens (Below 480px) */
+@media screen and (max-width: 480px) {
+
+  /* Adjust heading and text */
+  .m-intro h1 {
+    font-size: 1.5rem;
   }
-  .Options a {
-    font-size: 16px;
-    padding: 10px 20px;
+
+  .m-intro p {
+    font-size: 0.9rem;
   }
-  main {
-    height: 450px;
+
+  /* Stack items completely */
+  nav,
+  .Options,
+  .logins {
+    flex-direction: column;
   }
-  .m-intro {
-    max-width: 400px;
+
+  /* Buttons full-width */
+  .Options a,
+  .logins a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  main img {
+    max-width: 100%;
   }
 }
-
-/* Extra large devices (large desktops, 993px and up) */
-@media only screen and (min-width: 993px) {
-  nav {
-    justify-content: space-around;
-  }
-  .Options a {
-    font-size: 18px;
-  }
-  main {
-    height: 500px;
-  }
-  .m-intro {
-    max-width: 450px;
-  }
-}
-
-
->>>>>>> 3bc3114 (Initial commit)
