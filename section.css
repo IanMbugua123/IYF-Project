@@ -518,7 +518,7 @@
 .h-main-sm-fb{
   width: 20px;
   height: 20px;
-  background-image: url(/icons/facebook.png);
+  background-image: url(icons/facebook.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -528,7 +528,7 @@
 .h-main-sm-x{
   width: 20px;
   height: 20px;
-  background-image: url(/icons/twitter.png);
+  background-image: url(icons/twitter.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -537,7 +537,7 @@
 .h-main-sm-insta{
   width: 20px;
   height: 20px;
-  background-image: url(/icons/instagram.png);
+  background-image: url(icons/instagram.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
