@@ -650,18 +650,52 @@
   
 }
 
+/* Info Container to position elements */
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Info Section Styles */
 .info-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: left;
   background-color: #007bff;
   color: white;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  width: 50%;
 }
+
+/* Individual Info Box */
+.info-box {
+  text-align: left;
+  padding: 0 20px;
+  flex: 1;
+}
+
+/* Vertical Line */
+.divider {
+  width: 2px;
+  background-color: white;
+  height: 50px;
+}
+
+/* Image Styles */
+.info-image {
+  width: 300px;
+  position: absolute;
+  right: -50px; /* Slightly overlaps */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .info-section div {
-  text-align: center;
+  text-align: justify;
+  justify-content: space-between;
 }
 
 /* Constultation Section*/
@@ -1228,7 +1262,7 @@
 
   .info-section {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: le;
   }
 
   .index-Constultation {

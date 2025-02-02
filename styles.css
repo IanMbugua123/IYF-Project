@@ -183,7 +183,7 @@ main::before {
 
 =======
 body{
-  background: linear-gradient(lightblue,white);
+  background: linear-gradient(#662D8C,#ED1E79 );
   background-repeat: no-repeat;
   
 }
@@ -198,6 +198,8 @@ nav{
 .Heading{
   color: cornflowerblue;
 }
+
+
 
 .Options {
   display: flex; 
@@ -216,7 +218,7 @@ nav{
 
 .Options a:hover {
   color: #fff; 
-  background-color: #007bff; 
+  background-color:#662D8C; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -231,7 +233,7 @@ nav{
   text-decoration: none; 
   color:cornflowerblue; 
   padding: 10px 20px; 
-  border: 2px solid cornflowerblue; 
+  border: 2px solid#662D8C; 
   border-radius: 40px; 
   transition: all 0.3s ease; 
 }
@@ -245,10 +247,11 @@ nav{
 
 main {
   height: 500px; 
-  background-image: url(img/doctor.png); /* Ensure correct path to your image */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position:center ;
+  
+}
+main img{
+  width: 350px;
+  border-radius: 10px;
 }
 
 .m-intro {
@@ -283,6 +286,7 @@ main::before {
   color:cornflowerblue; 
   line-height: 1.5;
 }
+
 
 /* Base styles - applicable to all screen sizes */
 
